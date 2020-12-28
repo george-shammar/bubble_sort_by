@@ -12,4 +12,4 @@ def bubble_sort_by(arr)
     arr
 end
     
-puts bubble_sort_by(["hi", "hello", "hey"])
+puts bubble_sort_by(['hi', 'hello', 'hey'])
