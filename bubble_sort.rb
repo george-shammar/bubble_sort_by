@@ -1,3 +1,10 @@
+# Bubble_sort method.
+def bubble_sort(arr)
+  arr.length.times do
+    arr.each_with_index do |_x, i|
+
+
+
 def bubble_sort_by(arr)
   arr.length.times do
     arr.each_with_index do |_x, i|
