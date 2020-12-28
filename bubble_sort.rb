@@ -4,12 +4,13 @@ def bubble_sort_by(arr)
             left = arr[i]
             right = arr[i + 1]
             if (arr[-1] != left)
-                if(arr[i] - arr[i + 1] > 0) do
+                if((arr[i].length) - (arr[i + 1].length) > 0) then
                     arr[i], arr[i + 1] = arr[i + 1], arr[i]
                 end
-            
-                
+            end     
         end
     end
+    arr
 end
     
+puts bubble_sort_by(["hi", "hello", "hey"])
