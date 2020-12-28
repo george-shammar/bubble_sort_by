@@ -17,13 +17,13 @@ The project was designed entirely using Ruby. The code was kept clean with the m
 
 ## Author
 
-bust_in_silhouette George Gbenle:
+### George Gbenle:
 
     Github profile: @george-shammar
     Twitter: @GeorgeShammar
     linkedin: George Gbenle
 
-## handshake Contributing
+## Contributing
 
 Contributions and feature requests are welcome!
 
