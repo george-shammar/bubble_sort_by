@@ -20,12 +20,12 @@ def bubble_sort_by(arr)
       left = arr[i]
       if arr[-1] != left
         yield arr[i], arr[i + 1] = arr[i + 1], arr[i] if (arr[i].length - arr[i + 1].length).positive?
-        end
+      end
     end
   end
   arr
 end
 
-p bubble_sort_by(%w[hi hello hey]) do |left, right|
-    eft.length - right.length
+p bubble_sort_by(%w[hi hello hey]) do
+    left.length - right.length
 end
