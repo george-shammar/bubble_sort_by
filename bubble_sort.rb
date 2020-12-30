@@ -27,5 +27,5 @@ def bubble_sort_by(arr)
 end
 
 p bubble_sort_by(%w[hi hello hey]) do
-    left.length - right.length
+  left.length - right.length
 end
