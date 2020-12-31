@@ -19,10 +19,8 @@ def bubble_sort_by(arr)
     arr.each_with_index do |_x, i|
       left = arr[i]
       if arr[-1] != left
-        if yield(arr[i], arr[i + 1]).positive?
-          arr[i], arr[i + 1] = arr[i + 1], arr[i]
+        arr[i], arr[i + 1] = arr[i + 1], arr[i] if yield(arr[i], arr[i + 1]).positive? 
       end
-    end
     end
   end
   arr
