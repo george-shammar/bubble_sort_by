@@ -1,11 +1,13 @@
+# frozen_string_literal: true
+
 # Bubble_sort method.
 def bubble_sort(arr)
   arr.length.times do
     arr.each_with_index do |_x, i|
       left = arr[i]
-      if arr[-1] != left
-        arr[i], arr[i + 1] = arr[i + 1], arr[i] if (arr[i] - arr[i + 1]).positive?
-      end
+      next unless arr[-1] != left
+
+      arr[i], arr[i + 1] = arr[i + 1], arr[i] if (arr[i] - arr[i + 1]).positive?
     end
   end
   arr
@@ -18,8 +20,10 @@ def bubble_sort_by(arr)
   arr.length.times do
     arr.each_with_index do |_x, i|
       left = arr[i]
-      if arr[-1] != left
-        arr[i], arr[i + 1] = arr[i + 1], arr[i] if yield(arr[i], arr[i + 1]).positive?
+      next unless arr[-1] != left
+
+      if yield(arr[i], arr[i + 1]).positive?
+        arr[i], arr[i + 1] = arr[i + 1], arr[i]
       end
     end
   end
