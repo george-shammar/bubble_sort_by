@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 # Bubble_sort method.
 def bubble_sort(arr)
   arr.length.times do
@@ -22,9 +20,7 @@ def bubble_sort_by(arr)
       left = arr[i]
       next unless arr[-1] != left
 
-      if yield(arr[i], arr[i + 1]).positive?
-        arr[i], arr[i + 1] = arr[i + 1], arr[i]
-      end
+      arr[i], arr[i + 1] = arr[i + 1], arr[i] if yield(arr[i], arr[i + 1]).positive?
     end
   end
   arr
